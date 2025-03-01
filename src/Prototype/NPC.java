@@ -1,6 +1,6 @@
-package src.Prototype;
+package Prototype;
 
-public class NPC implements CloneableGameEntity {
+public class NPC implements Prototype.CloneableGameEntity {
     private String name;
     private String description;
     private int health;
@@ -16,7 +16,6 @@ public class NPC implements CloneableGameEntity {
         return new NPC(this.name, this.description, this.health);
     }
 
-    // Setter methods to modify cloned NPC
     public void setName(String name) {
         this.name = name;
     }

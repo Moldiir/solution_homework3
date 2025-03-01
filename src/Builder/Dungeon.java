@@ -1,5 +1,8 @@
-package src.Builder;
-import java.util.*;
+package Builder;
+
+import Prototype.Room;
+import Prototype.NPC;
+import java.util.List;
 
 public class Dungeon {
     private String name;
@@ -15,6 +18,12 @@ public class Dungeon {
         this.traps = traps;
         this.treasureRooms = treasureRooms;
     }
+
+    public List<Room> getRooms() { return rooms; }
+    public String getName() { return name; }
+    public List<NPC> getNpcs() { return npcs; }
+    public List<String> getTraps() { return traps; }
+    public List<String> getTreasureRooms() { return treasureRooms; }
 
     @Override
     public String toString() {

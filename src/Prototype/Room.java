@@ -1,6 +1,6 @@
-package src.Prototype;
+package Prototype;
 
-public class Room implements CloneableGameEntity {
+public class Room implements Prototype.CloneableGameEntity {
     private String name;
     private String description;
 
@@ -14,7 +14,6 @@ public class Room implements CloneableGameEntity {
         return new Room(this.name, this.description);
     }
 
-    // Setter methods to modify cloned Room
     public void setName(String name) {
         this.name = name;
     }
@@ -25,6 +24,6 @@ public class Room implements CloneableGameEntity {
 
     @Override
     public String toString() {
-        return "Room name: '" + name + "', description: '" + description + "';";
+        return "Room: " + name + " - " + description;
     }
 }

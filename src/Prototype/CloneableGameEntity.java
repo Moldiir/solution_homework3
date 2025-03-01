@@ -1,4 +1,5 @@
-package src.Prototype;
+package Prototype;
+
 public interface CloneableGameEntity {
     CloneableGameEntity cloneEntity();
 }

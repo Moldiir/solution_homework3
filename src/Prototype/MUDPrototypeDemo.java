@@ -1,14 +1,14 @@
-package src.Prototype;
+package Prototype;
 
 public class MUDPrototypeDemo {
     public static void main(String[] args) {
         // Creating prototype instances
-        Room prototypeRoom = new Room("Dungeon", "A dark and creepy dungeon.");
-        NPC prototypeNPC = new NPC("Goblin", "A small, green creature with sharp teeth.", 50);
+        Prototype.Room prototypeRoom = new Prototype.Room("Dungeon", "A dark and creepy dungeon.");
+        Prototype.NPC prototypeNPC = new Prototype.NPC("Goblin", "A small, green creature with sharp teeth.", 50);
 
         // Cloning the prototypes
-        Room clonedRoom = prototypeRoom.cloneEntity();
-        NPC clonedNPC = prototypeNPC.cloneEntity();
+        Prototype.Room clonedRoom = prototypeRoom.cloneEntity();
+        Prototype.NPC clonedNPC = prototypeNPC.cloneEntity();
 
 
         clonedNPC.setName("Orc");
