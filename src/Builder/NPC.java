@@ -1,3 +1,4 @@
+package src.Builder;
 public class NPC {
     private String name;
 

@@ -1,3 +1,4 @@
+package src.Builder;
 public interface IDungeonBuilder {
     IDungeonBuilder setDungeonName(String name);
     IDungeonBuilder addRoom(Room room);

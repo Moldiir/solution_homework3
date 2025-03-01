@@ -1,3 +1,4 @@
+package src.Builder;
 public class MUDBuilderDemo {
     public static void main(String[] args) {
         IDungeonBuilder builder = new SimpleDungeonBuilder();
